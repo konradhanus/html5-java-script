@@ -1,0 +1,80 @@
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+<html>
+
+<body>
+    <h4>Formularz zgłoszeniowy</h4>
+    <br>
+    <form>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Imię i nazwisko" data-eror-message="Podaj imię i nazwisko" required>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Adres email" data-eror-message="Podaj adres email" required>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Adres, ulica, nr domu" data-eror-message="Podaj adres, ulicę i numer domu"
+                        required>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Kod pocztowy" data-eror-message="Podaj kod pocztowy w formacie XX-XXX"
+                        pattern="[0-9]{2}-[0-9]{3}" required>
+
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Miejscowość" data-eror-message="Podaj nazwę miejscowości" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Numer telefonu" data-eror-message="Podaj swój nr telefonu">
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <input type="number" class="form-control" min="1" placeholder="Wiek" data-eror-message="Podaj swój wiek" required>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 pull-right">
+                <input type="submit" class="btn btn-primary pull-right" value="Wyślij">
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="alert alert-danger">
+            <ol>
+
+
+            </ol>
+
+        </div>
+    </form>
+</body>
+
+</html>
