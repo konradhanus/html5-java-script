@@ -1,6 +1,6 @@
-(function () {
+(function() {
 
-    function Vaildator(form) {
+    function Validator(form) {
         this.form = form;
         this.fields = this.form.querySelectorAll("[required]");
         this.errors = [];
@@ -11,21 +11,17 @@
             e.preventDefault();
 
             var formValid = this.validate();
+
             if (formValid) {
                 this.form.submit();
-            }
-            else {
+            } else {
                 return false;
             }
 
-
-            return false;
-        }
-
-
     }.bind(this);
 }
-    Vaildator.prototype.validate = function () {
+
+    Validator.prototype.validate = function() {
     for (var i = 0; i < this.fields.length; i++) {
         this.validateField(this.field[i]);
     }
@@ -36,7 +32,7 @@
         return false;
     }
 }
-Vaildator.prototype.validateField = function (field) {
+Validator.prototype.validateField = function(field) {
     var fieldValid = field.validity.valid;
 
     if (fieldValid) {
@@ -47,23 +43,20 @@ Vaildator.prototype.validateField = function (field) {
     }
 }
 
-Validator.prototype.markAsValid = function (field) {
+Validator.prototype.markAsValid = function(field) {
     field.classList.remove("invalid");
     field.classList.add("valid");
 
 }
 
-Validator.prototype.markAsInalid = function (field) {
+Validator.prototype.markAsInalid = function(field) {
     field.classList.remove("valid");
     field.classList.add("invalid");
 
 }
 
 
-
-
-
-var vaildator = new Vaildator(document.querySelector("#form"));
-
+//var validator1 = new Validator(document.querySelector("#form"));
+var validator1 = new Validator(document.querySelector("#form"));
 
 }   ) ();
