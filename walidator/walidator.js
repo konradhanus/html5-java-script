@@ -57,6 +57,8 @@ Validator.prototype.markAsInalid = function(field) {
 
 
 //var validator1 = new Validator(document.querySelector("#form"));
-var validator1 = new Validator(document.querySelector("#form"));
+var validator1 = new Validator(document.querySelector("#form"));   
+
+
 
 }   ) ();
